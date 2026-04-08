@@ -41,7 +41,7 @@ Accuracy ≈ 84.9%
 
 ## Status
 
-Research phase – A research paper is currently being prepared based on this work.
+Research phase – A research paper is currently being prepared based on this work
 
 ## Technologies
 
@@ -49,4 +49,4 @@ Research phase – A research paper is currently being prepared based on this wo
 * Scikit-learn
 * NumPy
 * Pandas
-* OpenCV
+* OpenCV 
