@@ -29,7 +29,7 @@ The workflow includes:
 Several machine learning algorithms were explored and evaluated, including:
 
 * Support Vector Machine (SVM)
-* k-Nearest Neighbors (kNN)
+* K-Nearest Neighbors (KNN)
 
 ## Results
 
@@ -37,7 +37,7 @@ The best performance was achieved using:
 
 kNN + PCA
 
-Accuracy ≈ 84.9%
+Accuracy ≈ 84.8%
 
 ## Status
 
