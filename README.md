@@ -41,7 +41,7 @@ Accuracy ≈ 84.8%
 
 ## Status
 
-Research phase – A research paper is currently being prepared based on this work
+Research phase – A research paper is currently being prepared based on this work.
 
 ## Technologies
 
