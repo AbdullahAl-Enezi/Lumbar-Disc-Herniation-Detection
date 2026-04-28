@@ -28,12 +28,12 @@ The system is built using **classical machine learning algorithms** combined wit
 * Source: MRI lumbar spine images
 * Classes:
 
-  * `Normal1`
-  * `Abnormal1`
+  * `Normal`
+  * `Abnormal`
 * Images are:
 
   * Converted to grayscale
-  * Resized (200×200 or 224×224)
+  * Resized (224×224)
   * Flattened into feature vectors
 
 ---
@@ -51,7 +51,7 @@ The system is built using **classical machine learning algorithms** combined wit
 
 ### 2️⃣ Feature Representation
 
-* Flattened pixel features (~40,000 features per image)
+* Flattened pixel features (~50,176 features per image)
 
 ---
 
@@ -126,11 +126,7 @@ The project includes:
 * Best model performance summary
 * Confusion matrices for each model
 * PCA performance plots
-* CSV file:
 
-  ```
-  best_pca_smoothing_comparison.csv
-  ```
 
 ---
 
@@ -193,7 +189,7 @@ This work demonstrates that:
 
 ## 📬 Contact
 
-Developed by: **Abdullah Saeed**
+Developed by: **Abdullah Al-Enezi**
 Field: Artificial Intelligence
 
 ---
