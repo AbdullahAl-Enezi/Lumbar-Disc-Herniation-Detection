@@ -96,8 +96,10 @@ The following algorithms were evaluated:
 
 ### 🥇 Best Model
 
-* **LightGBM**
-* Achieved the highest performance among all models
+- **LightGBM**
+- Best PCA: **80**
+- Accuracy: **0.8879**
+- F1-score: **0.8974**
 
 ### 📈 Key Findings
 
@@ -144,7 +146,7 @@ cd Lumbar-Disc-Herniation-Detection
 ### 2. Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+pip install numpy pandas scikit-learn matplotlib seaborn opencv-python lightgbm
 ```
 
 ---
