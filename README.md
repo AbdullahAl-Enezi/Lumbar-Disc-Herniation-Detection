@@ -33,7 +33,7 @@ The system is built using **classical machine learning algorithms** combined wit
 * Images are:
 
   * Converted to grayscale
-  * Resized (224×224)
+  * Resized (200×200)
   * Flattened into feature vectors
 
 ---
@@ -51,7 +51,7 @@ The system is built using **classical machine learning algorithms** combined wit
 
 ### 2️⃣ Feature Representation
 
-* Flattened pixel features (~50,176 features per image)
+* Flattened pixel features (~40,000 features per image)
 
 ---
 
