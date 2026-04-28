@@ -1,52 +1,203 @@
-# Lumbar Disc Herniation Detection using Machine Learning
+# 🧠 Lumbar MRI Disc Classification using Classical Machine Learning
 
-## Overview
+## 📌 Overview
 
-This project develops a machine learning system to assist in detecting **lumbar disc herniation** from MRI images.
-The goal is to support physicians by providing automated analysis that can help speed up diagnosis and improve accuracy.
+This project presents a complete machine learning pipeline for classifying lumbar spine MRI images into two categories:
 
-## Problem
+* **Normal**
+* **Herniated Disc**
 
-Lumbar disc herniation is one of the most common causes of lower back pain and neurological complications.
-MRI scans are widely used for diagnosis, but interpreting large numbers of images requires time and clinical expertise.
+The system is built using **classical machine learning algorithms** combined with **feature engineering, PCA dimensionality reduction, and image preprocessing techniques**.
 
-## Approach
+---
 
-In this project, machine learning algorithms are applied to analyze MRI images and classify intervertebral discs into two categories:
+## 🎯 Objectives
 
-* Normal Disc
-* Herniated Disc
+* Build a robust ML pipeline for MRI classification
+* Compare multiple classical algorithms
+* Analyze the impact of:
 
-The workflow includes:
+  * PCA (dimensionality reduction)
+  * Image smoothing (bilateral filtering)
+* Achieve strong performance using lightweight models (no deep learning)
 
-* Image preprocessing
-* Feature extraction
-* Dimensionality reduction (PCA)
-* Machine learning classification
+---
 
-## Models Used
+## 🗂️ Dataset
 
-Several machine learning algorithms were explored and evaluated, including:
+* Source: MRI lumbar spine images
+* Classes:
 
-* Support Vector Machine (SVM)
+  * `Normal1`
+  * `Abnormal1`
+* Images are:
+
+  * Converted to grayscale
+  * Resized (200×200 or 224×224)
+  * Flattened into feature vectors
+
+---
+
+## ⚙️ Methodology
+
+### 1️⃣ Preprocessing
+
+* Grayscale conversion
+* Image resizing
+* Bilateral smoothing (optional)
+* Normalization (0–1 scaling)
+
+---
+
+### 2️⃣ Feature Representation
+
+* Flattened pixel features (~40,000 features per image)
+
+---
+
+### 3️⃣ Dimensionality Reduction
+
+* **PCA (Principal Component Analysis)**
+* Extensive sweep over multiple components
+
+---
+
+### 4️⃣ Models Used
+
+The following algorithms were evaluated:
+
 * K-Nearest Neighbors (KNN)
+* Support Vector Machine (RBF)
+* Logistic Regression
+* Decision Tree
+* Random Forest
+* Extra Trees
+* Gradient Boosting
+* AdaBoost
+* XGBoost *(optional)*
+* LightGBM *(best performing)*
 
-## Results
+---
 
-The best performance was achieved using:
+## 🧪 Experimental Setup
 
-kNN + PCA
+* Train/Test split: **85% / 15%**
+* Stratified sampling
+* Evaluation metrics:
 
-Accuracy ≈ 84.8%
+  * Accuracy
+  * Precision
+  * Recall
+  * F1-score
 
-## Status
+---
 
-Research phase – A research paper is currently being prepared based on this work
+## 📊 Results
 
-## Technologies
+### 🥇 Best Model
 
-* Python
-* Scikit-learn
-* NumPy
-* Pandas
-* OpenCV 
+* **LightGBM**
+* Achieved the highest performance among all models
+
+### 📈 Key Findings
+
+* PCA significantly reduces dimensionality with minimal information loss
+* Bilateral smoothing improves model performance
+* Classical ML models can compete with deep learning in this task
+
+---
+
+## 📉 Visualizations
+
+The project includes:
+
+* Class distribution plots
+* Feature distributions (mean/std)
+* Image sharpness analysis
+* PCA explained variance curves
+* Confusion matrices
+* Model comparison charts
+* Before vs after smoothing analysis
+
+---
+
+## 🧾 Outputs
+
+* Best model performance summary
+* Confusion matrices for each model
+* PCA performance plots
+* CSV file:
+
+  ```
+  best_pca_smoothing_comparison.csv
+  ```
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the notebook or script:
+
+```bash
+python disc_classifier.py
+```
+
+---
+
+## 📦 Requirements
+
+* Python 3.8+
+* numpy
+* pandas
+* opencv-python
+* scikit-learn
+* matplotlib
+* seaborn
+* xgboost *(optional)*
+* lightgbm *(recommended)*
+
+---
+
+## 📌 Project Structure
+
+```
+├── data/
+├── notebooks/
+├── disc_classifier.py
+├── best_pca_smoothing_comparison.csv
+├── README.md
+```
+
+---
+
+## 🧠 Key Contribution
+
+This work demonstrates that:
+
+> Carefully designed classical machine learning pipelines can achieve high performance on medical imaging tasks without requiring deep learning.
+
+---
+
+## 📬 Contact
+
+Developed by: **Abdullah Saeed**
+Field: Artificial Intelligence
+
+---
+
+## ⭐ If you found this useful
+
+Give the repo a star ⭐ and share it!
