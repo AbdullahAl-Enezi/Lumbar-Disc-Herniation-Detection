@@ -132,24 +132,45 @@ The project includes:
 
 ## 🚀 How to Run
 
-1. Clone the repository:
+### 1. Clone the repository:
 
 ```bash
 git clone https://github.com/AbdullahAl-Enezi/Lumbar-Disc-Herniation-Detection.git
 cd Lumbar-Disc-Herniation-Detection
 ```
 
-2. Install dependencies:
+---
+
+### 2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Run the notebook or script:
+---
+
+### 3. Run the project:
+
+#### 🟢 Option 1: Using Jupyter Notebook (Recommended)
+
+```bash
+jupyter notebook
+```
+
+Then open:
+
+```
+Disc_Classifier.ipynb
+```
+
+---
+
+#### 🟢 Option 2: Using Python script (if available)
 
 ```bash
 python disc_classifier.py
 ```
+
 
 ---
 
