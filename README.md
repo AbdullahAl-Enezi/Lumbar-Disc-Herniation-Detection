@@ -193,11 +193,10 @@ python disc_classifier.py
 ## 📌 Project Structure
 
 ```
-├── data/
-├── notebooks/
-├── disc_classifier.py
-├── best_pca_smoothing_comparison.csv
+├── Disc_Classifier.ipynb
 ├── README.md
+├── LICENSE
+├── .gitignore
 ```
 
 ---
