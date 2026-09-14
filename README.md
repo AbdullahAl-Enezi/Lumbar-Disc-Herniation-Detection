@@ -179,14 +179,14 @@ python disc_classifier.py
 ## 📦 Requirements
 
 * Python 3.8+
-* numpy
-* pandas
+* numpy 
+* pandas 
 * opencv-python
 * scikit-learn
 * matplotlib
 * seaborn
-* xgboost *(optional)*
-* lightgbm *(recommended)*
+* xgboost 
+* lightgbm 
 
 ---
 
